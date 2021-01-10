@@ -3,20 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C814E27225AAE060007A7F39 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C814E27125AAE060007A7F39 /* FeedViewController.swift */; };
+		C814E27825AAE11D007A7F39 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C814E27725AAE11D007A7F39 /* SnapKit */; };
+		C814E27B25AAE64E007A7F39 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C814E27A25AAE64E007A7F39 /* FeedTableViewCell.swift */; };
+		C814E27F25AAE860007A7F39 /* UserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C814E27E25AAE860007A7F39 /* UserType.swift */; };
+		C814E28425AAEBAE007A7F39 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C814E28325AAEBAE007A7F39 /* Kingfisher */; };
 		C8F75CA425AACD83002DAE21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F75CA325AACD83002DAE21 /* AppDelegate.swift */; };
-		C8F75CA825AACD83002DAE21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F75CA725AACD83002DAE21 /* ViewController.swift */; };
 		C8F75CAD25AACD84002DAE21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8F75CAC25AACD84002DAE21 /* Assets.xcassets */; };
 		C8F75CB025AACD84002DAE21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8F75CAE25AACD84002DAE21 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C814E27125AAE060007A7F39 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		C814E27A25AAE64E007A7F39 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		C814E27E25AAE860007A7F39 /* UserType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserType.swift; sourceTree = "<group>"; };
 		C8F75CA025AACD83002DAE21 /* FunnyGiphy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunnyGiphy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8F75CA325AACD83002DAE21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C8F75CA725AACD83002DAE21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C8F75CAC25AACD84002DAE21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8F75CAF25AACD84002DAE21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8F75CB125AACD84002DAE21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -27,12 +33,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C814E28425AAEBAE007A7F39 /* Kingfisher in Frameworks */,
+				C814E27825AAE11D007A7F39 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C814E27025AAE043007A7F39 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C814E27125AAE060007A7F39 /* FeedViewController.swift */,
+				C814E27A25AAE64E007A7F39 /* FeedTableViewCell.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C814E27D25AAE850007A7F39 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C814E27E25AAE860007A7F39 /* UserType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C8F75C9725AACD83002DAE21 = {
 			isa = PBXGroup;
 			children = (
@@ -62,8 +87,9 @@
 		C8F75CB925AACFFA002DAE21 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				C814E27D25AAE850007A7F39 /* Models */,
+				C814E27025AAE043007A7F39 /* ViewControllers */,
 				C8F75CA325AACD83002DAE21 /* AppDelegate.swift */,
-				C8F75CA725AACD83002DAE21 /* ViewController.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -101,6 +127,10 @@
 			dependencies = (
 			);
 			name = FunnyGiphy;
+			packageProductDependencies = (
+				C814E27725AAE11D007A7F39 /* SnapKit */,
+				C814E28325AAEBAE007A7F39 /* Kingfisher */,
+			);
 			productName = FunnyGiphy;
 			productReference = C8F75CA025AACD83002DAE21 /* FunnyGiphy.app */;
 			productType = "com.apple.product-type.application";
@@ -128,6 +158,10 @@
 				Base,
 			);
 			mainGroup = C8F75C9725AACD83002DAE21;
+			packageReferences = (
+				C814E27625AAE11D007A7F39 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				C814E28225AAEBAE007A7F39 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = C8F75CA125AACD83002DAE21 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -154,7 +188,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8F75CA825AACD83002DAE21 /* ViewController.swift in Sources */,
+				C814E27F25AAE860007A7F39 /* UserType.swift in Sources */,
+				C814E27225AAE060007A7F39 /* FeedViewController.swift in Sources */,
+				C814E27B25AAE64E007A7F39 /* FeedTableViewCell.swift in Sources */,
 				C8F75CA425AACD83002DAE21 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,6 +387,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C814E27625AAE11D007A7F39 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		C814E28225AAEBAE007A7F39 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C814E27725AAE11D007A7F39 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C814E27625AAE11D007A7F39 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		C814E28325AAEBAE007A7F39 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C814E28225AAEBAE007A7F39 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C8F75C9825AACD83002DAE21 /* Project object */;
 }
