@@ -12,14 +12,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    func application(_ application: UIApplication,
-                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    private var userRepository: UserRepositoryType? = nil
+    
+    func application(
+        _ application: UIApplication,
+        didFinishLaunchingWithOptions
+        launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let rect = UIScreen.main.bounds
         let window = UIWindow(frame: CGRect(x: 0, y: 0, width: rect.width, height: rect.height))
-        window.rootViewController = FeedViewController()
+        let userRepository = UserRepository()
+        window.rootViewController = FeedViewController(userRepository: userRepository)
         window.makeKeyAndVisible()
         
         self.window = window
+        self.userRepository = userRepository
         return true
     }
 }

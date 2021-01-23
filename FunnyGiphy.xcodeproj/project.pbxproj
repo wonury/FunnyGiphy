@@ -12,6 +12,7 @@
 		C814E27B25AAE64E007A7F39 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C814E27A25AAE64E007A7F39 /* FeedTableViewCell.swift */; };
 		C814E27F25AAE860007A7F39 /* UserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C814E27E25AAE860007A7F39 /* UserType.swift */; };
 		C814E28425AAEBAE007A7F39 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C814E28325AAEBAE007A7F39 /* Kingfisher */; };
+		C8CD389925BBEC8700DF5411 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CD389825BBEC8700DF5411 /* UserRepository.swift */; };
 		C8F75CA425AACD83002DAE21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F75CA325AACD83002DAE21 /* AppDelegate.swift */; };
 		C8F75CAD25AACD84002DAE21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8F75CAC25AACD84002DAE21 /* Assets.xcassets */; };
 		C8F75CB025AACD84002DAE21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8F75CAE25AACD84002DAE21 /* LaunchScreen.storyboard */; };
@@ -21,6 +22,7 @@
 		C814E27125AAE060007A7F39 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		C814E27A25AAE64E007A7F39 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		C814E27E25AAE860007A7F39 /* UserType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserType.swift; sourceTree = "<group>"; };
+		C8CD389825BBEC8700DF5411 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		C8F75CA025AACD83002DAE21 /* FunnyGiphy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunnyGiphy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8F75CA325AACD83002DAE21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8F75CAC25AACD84002DAE21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,6 +60,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		C8CD389725BBEC7D00DF5411 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C8CD389825BBEC8700DF5411 /* UserRepository.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		C8F75C9725AACD83002DAE21 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +97,7 @@
 		C8F75CB925AACFFA002DAE21 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				C8CD389725BBEC7D00DF5411 /* Services */,
 				C814E27D25AAE850007A7F39 /* Models */,
 				C814E27025AAE043007A7F39 /* ViewControllers */,
 				C8F75CA325AACD83002DAE21 /* AppDelegate.swift */,
@@ -191,6 +202,7 @@
 				C814E27F25AAE860007A7F39 /* UserType.swift in Sources */,
 				C814E27225AAE060007A7F39 /* FeedViewController.swift in Sources */,
 				C814E27B25AAE64E007A7F39 /* FeedTableViewCell.swift in Sources */,
+				C8CD389925BBEC8700DF5411 /* UserRepository.swift in Sources */,
 				C8F75CA425AACD83002DAE21 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
