@@ -17,6 +17,8 @@
 		C8F75CA425AACD83002DAE21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F75CA325AACD83002DAE21 /* AppDelegate.swift */; };
 		C8F75CAD25AACD84002DAE21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8F75CAC25AACD84002DAE21 /* Assets.xcassets */; };
 		C8F75CB025AACD84002DAE21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8F75CAE25AACD84002DAE21 /* LaunchScreen.storyboard */; };
+		FE86305A25D8DA7C00EA374A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE86305925D8DA7C00EA374A /* BaseViewController.swift */; };
+		FE86305D25D8DB8A00EA374A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE86305C25D8DB8A00EA374A /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +47,8 @@
 		C8F75CAC25AACD84002DAE21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8F75CAF25AACD84002DAE21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8F75CB125AACD84002DAE21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE86305925D8DA7C00EA374A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		FE86305C25D8DB8A00EA374A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +67,9 @@
 		C814E27025AAE043007A7F39 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				FE86305B25D8DB7600EA374A /* Detail */,
 				C84FB4BB25C53034004603C4 /* Feed */,
+				FE86305925D8DA7C00EA374A /* BaseViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -158,6 +164,14 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FE86305B25D8DB7600EA374A /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				FE86305C25D8DB8A00EA374A /* DetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -241,7 +255,9 @@
 				C84FB4BE25C53050004603C4 /* FeedViewController+UITableView.swift in Sources */,
 				C814E27B25AAE64E007A7F39 /* FeedTableViewCell.swift in Sources */,
 				C8CD389925BBEC8700DF5411 /* UserRepository.swift in Sources */,
+				FE86305A25D8DA7C00EA374A /* BaseViewController.swift in Sources */,
 				C8F75CA425AACD83002DAE21 /* AppDelegate.swift in Sources */,
+				FE86305D25D8DB8A00EA374A /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

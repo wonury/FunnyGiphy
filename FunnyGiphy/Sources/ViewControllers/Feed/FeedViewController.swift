@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-final class FeedViewController: UIViewController {
+final class FeedViewController: BaseViewController {
     
     internal let userRepository: UserRepositoryType
 
@@ -22,12 +22,8 @@ final class FeedViewController: UIViewController {
     
     init(userRepository: UserRepositoryType) {
         self.userRepository = userRepository
-        
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+
+        super.init()
     }
     
     override func viewDidLoad() {

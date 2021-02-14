@@ -21,11 +21,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let rect = UIScreen.main.bounds
         let window = UIWindow(frame: CGRect(x: 0, y: 0, width: rect.width, height: rect.height))
         let userRepository = UserRepository()
-        window.rootViewController = FeedViewController(userRepository: userRepository)
+        loadData(repo: userRepository)
+
+        let rootVC = FeedViewController(userRepository: userRepository)
+        let nvc = UINavigationController(rootViewController: rootVC)
+        rootVC.title = "목록"
+
+        window.rootViewController = nvc
         window.makeKeyAndVisible()
         
         self.window = window
         self.userRepository = userRepository
         return true
+    }
+
+    private func loadData(repo: UserRepositoryType) {
+        repo.add(userType: UserType(name: "kim", address: "서울", thumbnailUrl: "https://image.ytn.co.kr/general/jpg/2020/1207/202012071325561445_t.jpg"))
     }
 }
