@@ -25,8 +25,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let rootVC = FeedViewController(userRepository: userRepository)
         let nvc = UINavigationController(rootViewController: rootVC)
-        rootVC.title = "목록"
-
         window.rootViewController = nvc
         window.makeKeyAndVisible()
         

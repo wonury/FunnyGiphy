@@ -21,6 +21,8 @@ final class DetailViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        title = "상세화면"
         setUp()
     }
 

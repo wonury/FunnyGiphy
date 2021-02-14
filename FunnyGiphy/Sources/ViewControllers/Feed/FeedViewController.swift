@@ -17,6 +17,7 @@ final class FeedViewController: BaseViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(FeedTableViewCell.self, forCellReuseIdentifier: "FeedViewCell")
+        tableView.rowHeight = 72
         return tableView
     }()
     
@@ -28,7 +29,8 @@ final class FeedViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        title = "목록"
         setUp()
     }
     
